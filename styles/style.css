@@ -1,24 +1,28 @@
-/* место для вашего кода */
+
 .content {
     margin: 0 auto;
     border-color: white;
 }
 
 .header {
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  padding: 92px 24px 96px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 92px 50px;
+    display: grid;
+    grid-template-columns: 1.5fr auto 1.5fr;
+    align-items: center;
 }
-
-.header_menu_list {
+.header_menu {
+    place-content: center start;
+}
+.header_menu_list{
   display: flex;
   flex-direction: row;
   gap: 0 32px;
   list-style: circle;
-  justify-content: flex-start;
-  flex-wrap: wrap;
 }
+
 .menu_link_no_item {
   list-style: none;
 }
@@ -32,10 +36,9 @@
     flex: 0 0 auto;
     width: 148px;
     height: 105px;
+    place-content: center;
     font-style: normal;
     margin: auto;
-    padding-right: 294px;
-    align-items: center;
   }
 .header__logo-image {
     width: inherit;
@@ -47,7 +50,7 @@
     flex-direction: column;
     justify-self: end;
     align-items:flex-start;
-    padding-right: 4px;
+    padding-right: 35px;
 }
 .address-item {
     text-decoration: none;
@@ -68,6 +71,7 @@
     background-size: cover;
     box-sizing: border-box;
     position: relative;
+    margin: 0;
 }
 .cover_title {
     color: #fff;
@@ -227,17 +231,16 @@
   
   
 .about {
+    padding: 181px 24px 0;
     display: grid;
     grid-template-columns: 334px 1fr;
-    align-content: center;
-    justify-content: start;
+    min-height: 595px;
     padding: 0 24px;
-    margin: 126px 24px;
 }
   
-.about_column {
-    padding-left: 47px;
-}
+.about__column {
+    padding: 2px 0 0 47px;
+  }
   
 .about_logo {
     background-color: #000;
@@ -275,9 +278,7 @@
 .about_text {
     font-size: 20px;
     line-height: 24px;
-    padding-bottom: 24px;
-    place-content: end;
-}
+    padding-bottom: 24px;}
 
 .footer {
     display: flex;
@@ -321,8 +322,6 @@
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
 }
-  
-
   
 .footer_social_list {
     display: flex;
