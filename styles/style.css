@@ -16,7 +16,7 @@
 .header_menu {
     place-content: center start;
 }
-.header_menu_list{
+.header_menu_list {
   display: flex;
   flex-direction: row;
   gap: 0 32px;
@@ -235,7 +235,6 @@
     display: grid;
     grid-template-columns: 334px 1fr;
     min-height: 595px;
-    padding: 0 24px;
 }
   
 .about__column {
@@ -278,7 +277,8 @@
 .about_text {
     font-size: 20px;
     line-height: 24px;
-    padding-bottom: 24px;}
+    padding-bottom: 24px;
+}
 
 .footer {
     display: flex;
