@@ -7,7 +7,6 @@
 .header {
   font-size: 18px;
   display: flex;
-  height: 294px;
   align-items: center;
   padding: 92px 24px 96px;
 }
@@ -23,10 +22,17 @@
 .menu_link_no_item {
   list-style: none;
 }
+.active_link {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+  }
 .header_logo {
     flex: 0 0 auto;
     width: 148px;
     height: 105px;
+    font-style: normal;
     margin: auto;
     padding-right: 294px;
     align-items: center;
@@ -114,6 +120,7 @@
 }
   
 .bet_button {
+    font-family:'Raleway',sans-serif;
     color: #fff;
     font-weight: 500;
     font-size: 22px;
@@ -140,7 +147,6 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     gap: 25px;
     flex-wrap: wrap;
     padding: 27px 0 30px;
@@ -167,25 +173,25 @@
     padding: 51px 40px 48px;
     position: relative;
     z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
   
 .card_type_film {
     background: url(../images/card-lot-01.jpg);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
 }
   
 .card_type_book {
     background: url(../images/card-lot-02.jpg);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
   
 .card_type_picture {
     background: url(../images/card-lot-03.jpg);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -206,6 +212,7 @@
     font-size: 20px;
     line-height: 24px;
     position: relative;
+    text-decoration: none;
     z-index: 1;
     padding: 10px;
 }
@@ -222,12 +229,14 @@
 .about {
     display: grid;
     grid-template-columns: 334px 1fr;
-    min-height: 595px;
+    align-content: center;
+    justify-content: start;
     padding: 0 24px;
+    margin: 126px 24px;
 }
   
 .about_column {
-    padding: 2px 0 0 47px;
+    padding-left: 47px;
 }
   
 .about_logo {
@@ -254,17 +263,20 @@
   
 .about_title {
     text-transform: uppercase;
+    font-family: 'Raleway';
     font-size: 40px;
-    font-weight: 700;
+    place-content: start;
     padding-top: 20px;
-    position: absolute;
+    position: static;
     top: 30px;
+    padding-bottom: 100px;
 }
   
 .about_text {
     font-size: 20px;
     line-height: 24px;
     padding-bottom: 24px;
+    place-content: end;
 }
 
 .footer {
@@ -276,6 +288,7 @@
 }
   
 .footer_address {
+    font-style: normal;
     font-size: 18px;
     line-height: 1.35;
     display: flex;
@@ -309,9 +322,7 @@
     text-underline-offset: 4px;
 }
   
-.footer_link_active {
-    text-decoration-line: none;
-}
+
   
 .footer_social_list {
     display: flex;
