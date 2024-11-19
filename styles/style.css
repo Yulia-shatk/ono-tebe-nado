@@ -16,7 +16,7 @@
 .header_menu {
     place-content: center start;
 }
-.header_menu_list{
+.header_menu_list {
   display: flex;
   flex-direction: row;
   gap: 0 32px;
